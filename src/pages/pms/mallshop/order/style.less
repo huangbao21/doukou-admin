@@ -1,0 +1,99 @@
+
+.stepContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    flex: 2;
+    border: 1px solid #e8e8e8;
+    margin-right: 30px;
+    padding: 20px;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      img {
+        width: 80px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 80px;
+        margin-left: 20px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+    }
+
+    .refundInfo,
+    .buyerInfo {
+      li {
+        margin-bottom: 15px;
+      }
+
+      .key {
+        display: inline-block;
+        width: 65px;
+        text-align: right;
+      }
+
+      .value {
+        padding-left: 15px;
+      }
+    }
+
+  }
+
+  .right {
+    .title {
+      font-weight: bold;
+    }
+
+    flex: 3;
+    border: 1px solid #e8e8e8;
+    margin-right: 30px;
+    padding: 20px;
+
+    .info {
+      padding-left: 30px;
+      margin-top: 20px;
+
+
+      .value {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .addressContainer {
+    position: relative;
+  }
+}
+
+.ant-steps-vertical .ant-steps-item-content {
+  width: 100%
+}
+
+:global {
+  .ant-steps-dot .ant-steps-item-content {
+    width: 100%;
+  }
+}

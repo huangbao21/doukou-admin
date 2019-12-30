@@ -1,0 +1,23 @@
+@import '~antd/lib/style/themes/default.less';
+
+:global .g-button-inline {
+  background: transparent;
+  color: @primary-color;
+  margin: 0 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.warning {
+    color: @warning-color;
+  }
+  &.danger {
+    color: @error-color;
+  }
+  &.success {
+    color: @success-color;
+  }
+}

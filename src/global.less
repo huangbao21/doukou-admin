@@ -1,0 +1,63 @@
+@import '~antd/dist/antd.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-form-item-children>.ant-collapse>.ant-collapse-item {
+  border-bottom: 0px;
+}
+
+.ant-form-item-children>.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+  color: #1890FF;
+  margin-left: 20%
+}
+
+.ant-card .ant-steps-dot .ant-steps-item-content{
+  width: 100%
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}

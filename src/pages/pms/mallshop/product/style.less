@@ -1,0 +1,116 @@
+.wrap {
+    padding: 30px;
+
+    .card {
+        margin-bottom: 20px;
+
+        .goodsProps {
+            padding: 15px;
+            background: #f9f9f9;
+        }
+
+    }
+
+    .footAction {
+        text-align: center;
+    }
+
+    .variety {
+        background: #f9f9f9;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        .varietyItem {
+            padding-top: 15px;
+        }
+
+        .varietyValue {
+            padding: 15px 0;
+            background: #fff;
+        }
+    }
+
+    .varietyDetail {
+        background: #f9f9f9;
+        padding: 15px;
+
+        .value {
+            display: flex;
+
+            .required::before {
+                content: '*';
+                color: red;
+            }
+
+            .col {
+                width: 100px;
+                text-align: center;
+            }
+
+            .dynamic {
+                padding-top: 24px;
+
+                .row {
+                    display: flex;
+                    margin-right: 30px;
+                    border-top: 1px solid #ddd;
+                }
+
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    border-right: 1px solid #ddd;
+                }
+
+                .colValue {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-collapse: collapse;
+                    border-top: 1px solid #ddd;
+                    padding: 10px;
+
+                    &:first-child {
+                        border-top: none;
+                    }
+                }
+            }
+        }
+
+        .batchAction {
+            span {
+                margin-right: 15px;
+            }
+
+            a {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.quickModify {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        p{
+            width: 80px;
+            text-align: center;
+            margin-right: 15px;
+        }
+        input{
+            width: 80px;
+        }
+    }
+
+    .required::before {
+        content: '*';
+        color: red;
+    }
+}
